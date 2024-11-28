@@ -6,11 +6,13 @@ title: Building Inventory Visualizations
 # Building Inventory Visualizations
 
 ## Visualization 1: Bar Chart - Top 20 Agencies by Total Square Footage
-This bar chart shows the top 20 agencies with the highest total square footage of buildings.
+This bar chart shows the top 20 agencies with the largest total square footage.
 
-<iframe src="visualizations/bar_chart.html" width="800" height="600" frameborder="0"></iframe>
+<iframe src="bar.html" width="800" height="600" frameborder="0"></iframe>
+
+---
 
 ## Visualization 2: Line Chart - Square Footage Over Time
 This interactive line chart shows how square footage changes over time for selected agencies.
 
-<iframe src="visualizations/line_chart.html" width="800" height="600" frameborder="0"></iframe>
+<iframe src="line.html" width="800" height="600" frameborder="0"></iframe>
