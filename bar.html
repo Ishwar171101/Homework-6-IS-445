@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-c25668ad8cbaa6ee1aef95fa97c13b81"}, "mark": {"type": "bar", "color": "darkblue"}, "encoding": {"x": {"field": "Square Footage", "title": "Total Square Footage", "type": "quantitative"}, "y": {"field": "Agency Name", "sort": ["University of Illinois", "Department of Corrections", "Southern Illinois University", "Department of Human Services", "Department of Transportation", "Department of Military Affairs", "Department of Central Management Services", "Northern Illinois University", "Department of Natural Resources", "Illinois State University", "Department of Agriculture", "Western Illinois University", "Office of the Secretary of State", "Historic Preservation Agency", "Department of Veterans' Affairs", "Chicago State University", "Eastern Illinois University", "Department of Juvenile Justice", "Northeastern Illinois University", "Governors State University"], "title": "Agency", "type": "nominal"}}, "height": 1200, "title": "Top 20 Agencies by Total Square Footage (Descending Order)", "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-c25668ad8cbaa6ee1aef95fa97c13b81": [{"Agency Name": "University of Illinois", "Square Footage": 24990874}, {"Agency Name": "Department of Corrections", "Square Footage": 14939355}, {"Agency Name": "Southern Illinois University", "Square Footage": 8657092}, {"Agency Name": "Department of Human Services", "Square Footage": 8441855}, {"Agency Name": "Department of Transportation", "Square Footage": 5566342}, {"Agency Name": "Department of Military Affairs", "Square Footage": 4556117}, {"Agency Name": "Department of Central Management Services", "Square Footage": 4260761}, {"Agency Name": "Northern Illinois University", "Square Footage": 3748511}, {"Agency Name": "Department of Natural Resources", "Square Footage": 3351117}, {"Agency Name": "Illinois State University", "Square Footage": 2955028}, {"Agency Name": "Department of Agriculture", "Square Footage": 2580807}, {"Agency Name": "Western Illinois University", "Square Footage": 2347202}, {"Agency Name": "Office of the Secretary of State", "Square Footage": 2269754}, {"Agency Name": "Historic Preservation Agency", "Square Footage": 1605030}, {"Agency Name": "Department of Veterans' Affairs", "Square Footage": 1473684}, {"Agency Name": "Chicago State University", "Square Footage": 1219296}, {"Agency Name": "Eastern Illinois University", "Square Footage": 1164163}, {"Agency Name": "Department of Juvenile Justice", "Square Footage": 1138519}, {"Agency Name": "Northeastern Illinois University", "Square Footage": 1110103}, {"Agency Name": "Governors State University", "Square Footage": 1055971}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
