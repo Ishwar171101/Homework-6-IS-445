@@ -2,10 +2,13 @@
 layout: default
 title: Building Inventory Visualizations
 ---
+**Submitted By Ishwar Gangwal (ishwarg2@illinois.edu)**
 
 # Building Inventory Visualizations
+
+
 **The Data:** [Building Inventory Dataset](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/building_inventory.csv)
-**The Analysis:** [Jupyter Notebook Analysis]
+**The Analysis:** [Jupyter Notebook Analysis](https://github.com/Ishwar171101/Homework-6-IS-445/blob/main/HW_6.py)
 
 ## Visualization 1: Bar Chart - Top 20 Agencies by Total Square Footage
 This bar chart shows the top 20 agencies with the largest total square footage.
